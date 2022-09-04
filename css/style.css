@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'open sans';
+}
+.container {
+    margin: auto;
+    padding: 75px 120px;
+    max-width: 1440px;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+.landing .container {
+    text-align: center;
+    padding: 0rem 13.25rem  ;
+}
