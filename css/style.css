@@ -3,11 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --Pink: hsl(322, 100%, 66%);
+    --LightPink: hsl(321, 100%, 78%);
+    --LightRed: hsl(0, 100%, 63%);
+--VeryDarkCyan: hsl(192, 100%, 9%);
+--VeryPaleBlue: hsl(207, 100%, 98%);
+}
 body {
     font-family: 'open sans';
 }
 .container {
-    margin: auto;
+    margin: 2rem auto ;
     padding: 75px 120px;
     max-width: 1440px;
 }
@@ -15,7 +22,97 @@ header .container {
     display: flex;
     justify-content: space-between;
 }
+header button {
+    height: 40px;
+    width: 140px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 3px solid var(--LightPink);
+    background-color: transparent;
+    color: var(--LightPink);
+}
+header button:hover {
+    background-color: var(--Pink);
+    border-color: var(--Pink);
+    color: var(--VeryPaleBlue);
+}
 .landing .container {
     text-align: center;
     padding: 0rem 13.25rem  ;
+}
+.landing p {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.landing button {
+    background-color:var(--Pink) ;
+    color: var(--VeryPaleBlue);
+    width: 30%;
+    height: 40px;
+    border: transparent;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    transition-duration: .3s;
+
+
+}
+.landing button:hover {
+    opacity: .8;
+}
+.landing img {
+    margin-top: 2rem;
+    width: 100%;
+}
+@media (max-width:376px) {
+    .container {
+        margin:1rem 0 ;
+        padding: 0px;
+        width: 100%;
+    }
+    header img{
+        width: 40%;
+    }
+    .landing .container {
+        width: 100%;
+        padding: 0%;
+    }
+    .landing h1 {
+        margin: 2rem 3rem;
+        font-size: 1.6rem;
+    }
+    .landing p {
+        font-size: .9rem;
+        margin: 1rem auto;
+        width: 80%;
+    }
+
+    .info div h1 {
+        font-size: 2rem;
+        color: var(--VeryDarkCyan);
+        text-align: center;
+    }
+    
+}
+.info .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.info .container div{
+    width: 40%;
+}
+.info h1 {
+    font-size: 5rem;
+}
+.info div p {
+    font-size: 1rem;
+    color: var(--VeryDarkCyan);
+text-align: center;
 }
